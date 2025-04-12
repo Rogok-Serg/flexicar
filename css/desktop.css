@@ -1,0 +1,361 @@
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 72px;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .wrapper-logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+  }
+
+  .logo img {
+    width: 126px;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  .nav__list a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s;
+    color: rgb(254, 254, 255);
+  }
+
+  .nav__list a:hover {
+    color: #b688673d;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .wrapper-btn-tel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .lang-select {
+    position: relative;
+    display: inline-block;
+  }
+
+  .lang-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+  }
+
+  .selected-lang {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .arrow-icon {
+    color: #bdbdbe;
+  }
+
+  .lang-dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: #1e1e20;
+    border: 1px solid #9f7aea;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    display: none;
+    min-width: 100%;
+    z-index: 5;
+  }
+
+  .lang-dropdown li {
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .lang-dropdown li:hover {
+    background-color: #2c2c2e;
+  }
+
+  /* Show dropdown on hover */
+  .lang-select:hover .lang-dropdown {
+    display: block;
+  }
+
+  .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .login-in {
+    color: #bdbdbe;
+  }
+
+  .btn--signin {
+    gap: 7px;
+    transition: color 0.3s;
+  }
+
+  .btn--signin:hover {
+    color: #b688673d;
+  }
+
+  .wrapper-menu {
+    display: none;
+  }
+
+  .car-order {
+    padding-top: 128px;
+  }
+
+  .car-order__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+  }
+
+  .block-car-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 968px;
+    padding: 48px 24px;
+    border-radius: 16px;
+    background-color: rgb(30, 30, 32);
+  }
+
+  .car-info {
+    width: 100%;
+    gap: 153px;
+    padding: 0;
+  }
+
+  .car-info__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  .car-info__price {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 45px;
+  }
+
+  .included h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 26px;
+  }
+
+  .included__list {
+    margin-bottom: 40px;
+  }
+
+  .included__list li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .included__list svg {
+    color: #fefeff;
+  }
+
+  .car-specs {
+    margin-bottom: 0;
+  }
+
+  .car-specs svg {
+    color: #fefeff;
+  }
+
+  .img-ellipse {
+    top: -40%;
+    max-width: 460px;
+    height: 322px;
+  }
+
+  .img-car {
+    position: relative;
+    width: 460px;
+    z-index: 3;
+  }
+  .wrapper-btn-booking {
+    display: none;
+  }
+
+  .extras::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: rgb(84, 84, 84);
+    border-radius: 1px;
+  }
+
+  .extras h3 {
+    font-size: 24px;
+    font-weight: normal;
+    padding-top: 21px;
+    margin-bottom: 38px;
+  }
+
+  .extras__list {
+    row-gap: 24px;
+    column-gap: 16px;
+  }
+
+  .extras__list li {
+    width: 284px;
+  }
+
+  .insurance {
+    position: relative;
+  }
+
+  .insurance::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: rgb(84, 84, 84);
+    border-radius: 1px;
+  }
+
+  .insurance-conditions {
+    gap: 16px;
+  }
+
+  .insurance h3 {
+    font-size: 24px;
+    padding-top: 21px;
+    margin-bottom: 38px;
+  }
+
+  .insurance-condition {
+    width: 294px;
+    height: 334px;
+    padding: 24px;
+  }
+
+  .insurance-title {
+    margin-bottom: 24px;
+  }
+
+  .insurance-title p {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .insurance-condition h5 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  /*Form*/
+
+  .order-form {
+    width: 472px;
+    padding: 0 0 0 24px;
+  }
+
+  .form-summary {
+    flex-direction: column;
+  }
+
+  .wrapper-input {
+    width: 100%;
+  }
+
+  .summary {
+    width: 100%;
+    margin: 0;
+  }
+
+  .order-form h3 {
+    font-size: 24px;
+  }
+
+  .pay {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .btn-booking {
+    width: 100%;
+  }
+
+  /*Hero*/
+
+  .hero {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url(../assets/images/hero-desktop.webp);
+    padding: 160px 64px;
+  }
+
+  .hero-container {
+    max-width: 1140px;
+  }
+
+  .hero-text {
+    max-width: 440px;
+    font-size: 18px;
+  }
+
+  /*Footer*/
+
+  .footer {
+    max-width: 1920px;
+    padding: 64px 0 48px 0;
+  }
+
+  .footer-form-wrapper input {
+    max-width: 292px;
+  }
+
+  .footer-privacy {
+    padding: 32px 40px 0 40px;
+  }
+}
