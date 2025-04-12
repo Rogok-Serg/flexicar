@@ -1,4 +1,4 @@
-# Business Hero Section
+# FLEXICAR
 
 Цей проєкт — адаптивна секція Hero для бізнес-сайту, створена з використанням підходу **Mobile First**.
 
