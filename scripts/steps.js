@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initFlow();
 
-  window.addEventListener("resize", () => {
-    location.reload();
-  });
+  // window.addEventListener("resize", () => {
+  //   location.reload();
+  // });
 });
