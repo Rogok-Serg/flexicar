@@ -99,6 +99,29 @@
       </div>
     </header>
     <main>
+      <!-- <div class="step-progress" style="display: none;">
+        <div class="step">Add on extras</div>
+        <div class="step">Insurance</div>
+        <div class="step">Confirm Order</div>
+        <div class="step">Payment</div>
+      </div> -->
+      <div class="step-progress" style="display: none;">
+        <div class="step-wrapper">
+          <div class="step"></div>
+          <div class="progress-line"></div>
+        </div>
+        <div class="step-wrapper">
+          <div class="step"></div>
+          <div class="progress-line"></div>
+        </div>
+        <div class="step-wrapper">
+          <div class="step"></div>
+          <div class="progress-line"></div>
+        </div>
+        <div class="step-wrapper">
+          <div class="step"></div>
+        </div>
+      </div>
       <section class="car-order">
         <div class="container car-order__container">
           <div class="block-car-info">
@@ -177,7 +200,7 @@
               
             </div>
             <div class="wrapper-btn-booking btn-step-1">
-              <button class="btn-booking" type="button">Proceed to Booking</button>
+              <button class="btn-booking btn-proceed" type="button">Proceed to Booking</button>
             </div>
             <div class="extras">
               <h3>Add on extras</h3>
@@ -313,7 +336,7 @@
               </ul>
             </div>
             <div class="wrapper-btn-booking btn-step-2">
-              <button class="btn-booking" type="button">Continue</button>
+              <button class="btn-booking btn-extras" type="button">Continue</button>
             </div>            
             <div class="insurance">
               <h3>Insurance</h3>
@@ -421,7 +444,7 @@
               </div>
             </div>
             <div class="wrapper-btn-booking btn-step-3">
-              <button class="btn-booking" type="button">Continue</button>
+              <button class="btn-booking btn-insurance" type="button">Continue</button>
             </div>
           </div>
           <aside class="order-form">
@@ -475,8 +498,8 @@
               </div>        
           
               <div class="wrapper-btn-booking pay">
-                <button type="submit" class="btn-booking">Pay Cash</button>
-                <button type="submit" class="btn-booking">Pay Card</button>
+                <button type="submit" class="btn-booking btn-pay">Pay Cash</button>
+                <button type="submit" class="btn-booking btn-pay">Pay Card</button>
               </div>
             </form>
           </aside>          
@@ -536,5 +559,6 @@
     <script type="module" src="scripts/selected.js" defer></script>
     <script type="module" src="scripts/toogle.js" defer></script>
     <script type="module" src="scripts/steps.js" defer></script>
+    <script type="module" src="scripts/stepper.js"></script>
   </body>
 </html>

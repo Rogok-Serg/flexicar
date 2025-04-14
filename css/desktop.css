@@ -140,6 +140,10 @@
     display: none;
   }
 
+  .step-progress {
+    display: none;
+  }
+
   .car-order {
     padding-top: 128px;
   }
