@@ -42,14 +42,18 @@
   justify-content: center;
   align-items: center;
   padding: 16px;
-  margin-top: 20px;
-  background-color: #111;
+  padding-top: 20px;
+  background-color: rgb(30, 30, 32);
+  border-top: 1px solid #4f4f51;
 }
 
 .step-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   position: relative;
+  flex: 1;
+  min-width: 70px;
 }
 
 .step {
@@ -57,8 +61,8 @@
   height: 20px;
   background-color: #444;
   border-radius: 50%;
-  border: 1px solid transparent;
-  z-index: 1;
+  border: 2px solid transparent;
+  z-index: 2;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -68,50 +72,66 @@
 }
 
 .progress-line {
-  width: 25vw;
+  position: absolute;
+  top: 10px;
   height: 2px;
   background-color: #444;
-  margin-left: -2px;
-  margin-right: -2px;
+  z-index: 1;
   transition: background-color 0.3s;
 }
 
-/* .step-progress {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #1a1a1a;
-  color: white;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
+.progress-line.left {
+  left: 0;
+  right: 50%;
 }
 
-.step {
-  flex: 1;
-  text-align: center;
-  font-size: 0.75rem;
+.progress-line.right {
+  left: 50%;
+  right: 0;
+}
+
+.progress-line.active {
+  background-color: rgba(182, 136, 103, 1);
+}
+
+.step-label {
+  margin-top: 6px;
+  font-size: 12px;
   color: #aaa;
-  position: relative;
+  text-align: center;
 }
 
-.step.active {
-  color: #fff;
+.selected-car {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 35px 32px 20px;
+  background-color: rgb(30, 30, 32);
 }
 
-.step::before {
-  content: "";
-  display: block;
-  margin: 0 auto 0.25rem;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #555;
+.selected-car img {
+  height: 72px;
+  margin-right: 16px;
+}
+.selected-car h3 {
+  color: #fefeff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
-.step.active::before {
-  background-color: #f39c12;
-} */
+.selected-car span {
+  color: #919192;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.selected-car p {
+  color: #fefeff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
 
 .car-order__container {
   flex-direction: column;
@@ -654,10 +674,11 @@
 .footer-privacy::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 2px;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgb(84, 84, 84);
   border-radius: 1px;
 }
