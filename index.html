@@ -97,6 +97,32 @@
           </button>
         </div>
       </div>
+      <div class="mobile-menu js-menu-container" >
+        <div class="container mobile-menu-container">
+                <button type="button" class="mobile-btn-close js-close-menu" >
+                    <svg class="mobile-btn-close-icon" width="24" height="24">
+                        <use href="assets/symbol-defs.svg#close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-container-list list">
+                    <li class="mobile-menu-container-list-item">
+                        <a class="mobile-menu-container-list-link link title underline" href="">Book</a></li>
+                    <li class="mobile-menu-container-list-item">
+                        <a class="mobile-menu-container-list-link link title" href="">Help</a></li>
+                    <li class="mobile-menu-container-list-item">
+                        <a class="mobile-menu-container-list-link link title" href="">FAQ</a></li>
+                        <li class="mobile-menu-container-list-item">
+                          <a class="mobile-menu-container-list-link link title" href="">Rental Policies</a></li> 
+                          <li class="mobile-menu-container-list-item">
+                            <a class="mobile-menu-container-list-link link title" href="">Help Center</a></li>
+                </ul>
+                <div>
+                    <ul class="mobile-menu-contact list">
+                        <li><a class="mobile-contact-phone link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>                    
+                </div>
+        </div>
+    </div>
     </header>
     <main>
       <div class="step-progress" style="display: none;">
@@ -283,7 +309,7 @@
                       <use href="assets/symbol-defs.svg#navigation"></use>
                     </svg>
                     <div class="extra-wrapper-text">
-                      <p>GPS Navigation System</p>
+                      <p class="gps">GPS Navigation System</p>
                       <span>15 EUR</span>
                     </div>
                   </div>
@@ -568,5 +594,6 @@
     <script type="module" src="scripts/toogle.js" defer></script>
     <script type="module" src="scripts/steps.js" defer></script>
     <script type="module" src="scripts/stepper.js"></script>
+    <script type="module" src="scripts/mobile-menu.js"></script>
   </body>
 </html>

@@ -37,6 +37,104 @@
   display: none;
 }
 
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 110;
+  top: 52px;
+  left: 0;
+  background: #2d2d2f;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  padding-left: 40px;
+  padding-top: 80px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.mobile-btn-close {
+  position: absolute;
+  top: -20px;
+  right: 40px;
+  padding: 0;
+  line-height: 0;
+  width: 24px;
+  height: 24px;
+  fill: #4f4f51;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 150;
+}
+.mobile-btn-close:hover,
+.mobile-btn-close:focus {
+}
+
+.mobile-menu-container-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-menu-container-list {
+  margin-bottom: 60px;
+}
+.mobile-menu-container-list-link {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #bdbdbe;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-container-list-link:hover,
+.mobile-menu-container-list-link:focus {
+  color: var(--accent-color);
+}
+
+.mobile-contact-phone {
+  display: block;
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-contact-phone:hover,
+.mobile-contact-phone:focus {
+  color: #4d5ae5;
+}
+
+.mobile-menu-contact {
+  margin-bottom: 48px;
+}
+.mobile-menu-social-list {
+  display: flex;
+
+  gap: 56px;
+  padding-bottom: 40px;
+}
+
 .step-progress {
   display: flex;
   justify-content: center;
@@ -105,6 +203,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   padding: 35px 32px 20px;
   background-color: rgb(30, 30, 32);
 }
@@ -144,13 +243,12 @@
 .car-info {
   display: flex;
   flex-direction: column-reverse;
-  padding: 42px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 .car-image {
-  width: 100%;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .img-ellipse {
@@ -312,6 +410,10 @@
   margin-bottom: 20px;
 }
 
+.gps {
+  margin-bottom: 8px !important;
+}
+
 .extra-wrapper-text span {
   font-size: 16px;
   font-weight: 600;
@@ -342,7 +444,7 @@
 .insurance-condition {
   width: 100%;
   padding: 16px;
-  background-color: #383838;
+  background-color: rgb(30, 30, 32);
   border-radius: 8px;
 }
 
