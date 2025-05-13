@@ -43,7 +43,7 @@
   height: 100%;
   z-index: 110;
   top: 0;
-  left: 0;
+  right: 0;
   background: #2d2d2f;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -535,7 +535,7 @@
 .insurance-condition {
   width: 100%;
   padding: 16px;
-  background-color: rgb(30, 30, 32);
+  background-color: rgb(37 37 39);
   border-radius: 8px;
 }
 
@@ -679,7 +679,7 @@
 }
 
 .total::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -702,7 +702,7 @@
   font-size: 14px;
 }
 
-.checkbox-container input[type='checkbox'] {
+.checkbox-container input[type="checkbox"] {
   width: 16px;
   height: 16px;
   border-radius: 6px;
@@ -865,7 +865,7 @@
 }
 
 .footer-privacy::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 95%;
   height: 2px;

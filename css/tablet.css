@@ -4,7 +4,20 @@
   }
 
   .mobile-menu {
-    top: 76px;
+    width: 50%;
+  }
+
+  .mobile-menu-header {
+    height: 76px;
+  }
+
+  .logo-tablet {
+    display: none;
+  }
+
+  .mobile-btn-close {
+    top: 26px;
+    right: 32px;
   }
 
   .container {
